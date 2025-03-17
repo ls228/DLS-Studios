@@ -10,7 +10,7 @@ const ContactButton = () => {
       className="contact-button"
       onClick={() => window.location.href = `mailto:${email}?subject=${subject}&body=${body}`}
     >
-    Contact Tina
+    Contact Tina Kopa
     </button>
   );
 };

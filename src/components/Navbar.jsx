@@ -41,13 +41,13 @@ const Navbar = () => {
               className="menu-item" 
               onClick={() => { setMenuOpen(false); handleNavigation("about"); }}
             >
-              About
+              Tina Kopa 
             </li>
             <li 
               className="menu-item" 
               onClick={() => { setMenuOpen(false); handleNavigation("about-ramus"); }}
             >
-              About Ramus
+              Ramus
             </li>
             <li 
               className="menu-item" 
