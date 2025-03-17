@@ -1,0 +1,76 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  padding: 16px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  cursor: pointer;
+  color: white;
+  z-index: 1050;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1000;
+  padding-top: 50px;
+}
+
+.menu-overlay .menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1050;
+  color: white;
+}
+
+.menu-overlay ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.menu-overlay li {
+  margin: 20px 0;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.menu-overlay li:hover {
+  color: #00f0d8;
+}
+
+.menu-overlay a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.menu-overlay a:hover {
+  color: #00f0d8;
+}
+
+.tk-logo {
+  font-size: 3em;
+  line-height: 0.2;
+}

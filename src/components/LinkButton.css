@@ -1,0 +1,18 @@
+.link-button {
+    margin-top: 20px;
+    background-color: #0000;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.link-button:hover {
+    border-color: white;
+    box-shadow: 0px 0px 10px 2px white;
+    transform: scale(1.05);
+}
+  
