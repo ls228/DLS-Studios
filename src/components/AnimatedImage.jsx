@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import image1 from "../assets/images/tina.jpg"
+import image1 from "../assets/images/RAMUS_Tina.jpg"
 
 
 const AnimatedImage = ({ src, alt }) => {

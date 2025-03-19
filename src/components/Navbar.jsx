@@ -20,11 +20,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-<h1 className="tk-logo">Tina Kopa</h1>
+      <h1 className="tk-logo" onClick={() => handleNavigation("about")}>Tina Kopa</h1>
 
       {/* Menu Button */}
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <X size={30} /> : <Menu size={30} />} 
+        {menuOpen ? <X size={30} /> : <Menu size={30} />}
       </div>
 
       {/* Mobile Menu */}
@@ -32,26 +32,35 @@ const Navbar = () => {
         <motion.div
           initial={{ x: "100%" }}
           animate={{ x: 0 }}
-          exit={{ x: "100%" }}
+          exit={{ x: "-100%" }}
           transition={{ duration: 0.3 }}
           className="menu-overlay"
         >
           <ul>
-            <li 
-              className="menu-item" 
-              onClick={() => { setMenuOpen(false); handleNavigation("about"); }}
+            <li
+              className="menu-item"
+              onClick={() => {
+                setMenuOpen(false);
+                handleNavigation("about");
+              }}
             >
-              Tina Kopa 
+              Tina Kopa
             </li>
-            <li 
-              className="menu-item" 
-              onClick={() => { setMenuOpen(false); handleNavigation("about-ramus"); }}
+            <li
+              className="menu-item"
+              onClick={() => {
+                setMenuOpen(false);
+                handleNavigation("about-ramus");
+              }}
             >
               Ramus
             </li>
-            <li 
-              className="menu-item" 
-              onClick={() => { setMenuOpen(false); handleNavigation("contact"); }}
+            <li
+              className="menu-item"
+              onClick={() => {
+                setMenuOpen(false);
+                handleNavigation("contact");
+              }}
             >
               Contact
             </li>

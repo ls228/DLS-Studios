@@ -18,7 +18,8 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #00f0d8;
+  color: rgba(255, 255, 255, 0.85);
+  transform: scale(1.05);
 }
 
 body {
@@ -44,7 +45,8 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #00f0d8;
+  color: rgba(255, 255, 255, 0.85);
+  transform: scale(1.05);
 }
 button:focus,
 button:focus-visible {
@@ -57,7 +59,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #00f0d8;
+    color: rgba(255, 255, 255, 0.85);
   }
   button {
     background-color: #f9f9f9;

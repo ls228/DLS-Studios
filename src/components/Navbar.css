@@ -1,21 +1,25 @@
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
-  left: 20px;
-  right: 20px;
-  padding: 16px;
+  left: 0;
+  right: 0;
+  padding: 8px 20px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+/* Menu Icon */
 .menu-icon {
   cursor: pointer;
   color: white;
   z-index: 1050;
 }
 
+/* Menu Overlay */
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -26,51 +30,72 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   z-index: 1000;
   padding-top: 50px;
+  overflow: hidden;
 }
 
+/* Menu Close Icon */
 .menu-overlay .menu-icon {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
-  z-index: 1050;
   color: white;
 }
 
+/* Menu List */
 .menu-overlay ul {
   list-style: none;
   padding: 0;
-  text-align: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Menu List Items */
 .menu-overlay li {
-  margin: 20px 0;
-  font-size: 24px;
+  width: 40%; 
+  max-width: 220px; 
+  text-align: center;
+  margin: 10px 0;
+  font-size: 20px;
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
-  padding: 10px 20px;
+  padding: 12px 16px;
   border-radius: 5px;
-}
-
-.menu-overlay li:hover {
-  color: #00f0d8;
-}
-
-.menu-overlay a {
-  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease-in-out;
+  position: relative;
   color: white;
-  transition: color 0.3s;
+  transform-origin: center;
+  overflow: hidden;
 }
 
-.menu-overlay a:hover {
-  color: #00f0d8;
+/* Hover Effect */
+.menu-overlay li:hover {
+  color: rgba(255, 255, 255, 0.85);
+  clip-path: inset(0 -5px 0 -5px); 
 }
 
+/* Underline Animation */
+.menu-overlay li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.menu-overlay li:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Logo */
 .tk-logo {
-  font-size: 3em;
-  line-height: 0.2;
+  font-size: 2.5em;
+  margin-left: 20px;
 }
