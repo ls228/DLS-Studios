@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Importiere useNavigate für Navigation
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { Facebook, Linkedin, Instagram, Youtube } from "lucide-react";
+import { Instagram, Mail} from "lucide-react";
 import "./Footer.css"; // CSS für das Styling
 
 const Footer = () => {
@@ -11,23 +11,7 @@ const Footer = () => {
         {/* Social Media Section */}
         <div className="footer-social">
           <a
-            href="https://www.facebook.com/RamusIllumination"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-social-icon"
-          >
-            <Facebook size={20} />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/ramusillumination"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-social-icon"
-          >
-            <Linkedin size={20} />
-          </a>
-          <a
-            href="https://www.instagram.com/ramusstudio/"
+            href="https://www.instagram.com/dls_studios_"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-social-icon"
@@ -35,12 +19,12 @@ const Footer = () => {
             <Instagram size={20} />
           </a>
           <a
-            href="https://www.youtube.com/@ramusstudio"
+            href="mailto:dls-studios@outlook.com"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-social-icon"
           >
-            <Youtube size={20} />
+            <Mail size={20} />
           </a>
         </div>
 

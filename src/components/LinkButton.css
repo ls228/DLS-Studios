@@ -1,7 +1,7 @@
 .link-button {
     margin-top: 20px;
-    background-color: #0000;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 12px 20px;
     margin-top: 10px;
     border-radius: 10px;
@@ -11,8 +11,8 @@
 }
 
 .link-button:hover {
-    border-color: white;
-    box-shadow: 0px 0px 10px 2px white;
+    border-color: #5c5a4c;
+    box-shadow: 0px 0px 10px 2px #5c5a4c;
     transform: scale(1.05);
 }
   

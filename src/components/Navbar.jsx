@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1 className="tk-logo" onClick={() => handleNavigation("about")}>Tina Kopa</h1>
+      <h1 className="tk-logo" onClick={() => handleNavigation("about")}>DLS Studios</h1>
 
       {/* Menu Button */}
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
@@ -41,19 +41,19 @@ const Navbar = () => {
               className="menu-item"
               onClick={() => {
                 setMenuOpen(false);
-                handleNavigation("about");
+                handleNavigation("about-dls");
               }}
             >
-              Tina Kopa
+              dls studios
             </li>
             <li
               className="menu-item"
               onClick={() => {
                 setMenuOpen(false);
-                handleNavigation("about-ramus");
+                handleNavigation("about-us");
               }}
             >
-              Ramus
+              about us
             </li>
             <li
               className="menu-item"
@@ -62,7 +62,7 @@ const Navbar = () => {
                 handleNavigation("contact");
               }}
             >
-              Contact
+              contact
             </li>
           </ul>
         </motion.div>

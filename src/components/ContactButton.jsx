@@ -1,7 +1,7 @@
 import React from "react";
 
 const ContactButton = () => {
-  const email = "tina@ramus.com.au";
+  const email = "dls-studios@outlook.com";
   const subject = encodeURIComponent("Inquiry from Website");
   const body = encodeURIComponent("");
 
@@ -10,7 +10,7 @@ const ContactButton = () => {
       className="contact-button"
       onClick={() => window.location.href = `mailto:${email}?subject=${subject}&body=${body}`}
     >
-    Contact Tina Kopa
+    Contact us
     </button>
   );
 };

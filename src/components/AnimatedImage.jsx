@@ -1,8 +1,5 @@
-
 import { motion } from "framer-motion";
 import React from "react";
-import image1 from "../assets/images/RAMUS_Tina.jpg"
-
 
 const AnimatedImage = ({ src, alt }) => {
   return (
@@ -12,11 +9,12 @@ const AnimatedImage = ({ src, alt }) => {
       transition={{ duration: 1, ease: "easeOut" }}
       className="image-container"
     >
-      <img src={image1} alt={alt} className="animated-image" />
+      <img src={src} alt={alt} className="animated-image" />
     </motion.div>
   );
 };
 
 export default AnimatedImage;
+
 
 
